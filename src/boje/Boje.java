@@ -13,6 +13,7 @@ import java.awt.event.ActionEvent;
 public class Boje {
 
 	private JFrame frame;
+	Color boja;
 
 	/**
 	 * Launch the application.
@@ -49,7 +50,7 @@ public class Boje {
 		JButton btnInner = new JButton("Inner color");
 		btnInner.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Color boja = JColorChooser.showDialog(btnInner, null, null);
+				boja = JColorChooser.showDialog(btnInner, null, null);
 				btnInner.setBackground(boja);
 			}
 		});
@@ -59,7 +60,7 @@ public class Boje {
 		JButton btnBorder = new JButton("Border color");
 		btnBorder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Color boja = JColorChooser.showDialog(btnInner, null, null);
+				boja = JColorChooser.showDialog(btnInner, null, null);
 				btnBorder.setBackground(boja);
 			}
 		});
